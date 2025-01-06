@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slip Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="slip">
+    <div class="section" id="send-to">
+      <h2>Send To</h2>
+      <input type="text" id="name" placeholder="Name" value="AB">
+      <input type="text" id="account-number" placeholder="Account Number" value="XXXX-7100">
+      <input type="text" id="branch" placeholder="Branch" value="LADNUN">
+      <input type="text" id="ifsc" placeholder="IFSC Code" value="PUNB0102710">
+      <input type="number" id="amount" placeholder="Amount" value="132000">
+    </div>
+    
+    <div class="section" id="send-from">
+      <h2>Send From</h2>
+      <img id="bank-logo" src="default-logo.png" alt="Bank Logo">
+      <input type="file" id="upload-logo">
+    </div>
+    
+    <div class="section" id="payment-details">
+      <h2>Payment Details</h2>
+      <input type="text" id="receipt-no" placeholder="Receipt No." value="V1K5HAP19543">
+      <button id="random-receipt">Generate Receipt No.</button>
+      <input type="text" id="utr" placeholder="UTR" value="AXOMB12944074281">
+      <button id="random-utr">Generate UTR</button>
+      <input type="date" id="date" value="2024-06-20">
+    </div>
+  </div>
+  
+  <button id="download-btn">Download as PNG</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
